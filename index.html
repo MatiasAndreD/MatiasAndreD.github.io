@@ -1,202 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Portafolio Matias</title>
+    <title>Developer Full Stack | Matias Diaz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="icofont/icofont.min.css">
 </head>
-
 <body>
-    <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo"> <img style="float: left;" width="30" src="assets/img/logo.png">
-                    <h2 style="float: left; padding-left: 10px;">MATDIAR</h2>
-                </a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Sobre mi</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Trabajos</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
-                </ul>
-            </div>
-
             <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class="bx bx-menu"></i>
+            </div>
+            <div>
+                <a href="" class="nav__logo">Matias</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#trayectoria" class="nav__link">Trayectoria</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Matias</span><br> Desarrollador Mobile</h1>
+        <!--HOME-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="img/perfil.png" alt="" >
+                    </div>
+                    <h1 class="home__title">Matias Díaz Arriaza</h1>
+                    <span class="home__profession">Full Stack Developer</span>
 
-                <a href="#" class="button">Contact</a>
-            </div>
+                    <div class="home__social">
+                        <a href="#" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-github'></i></a>
+                
+                    </div>
 
-            <div class="home__social">
-                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-            </div>
-
-            <div class="home__img">
-                <img src="assets/img/perfil.png" alt="">
+                    <a download href="./download/Curriculum_Matias_Diaz.pdf" class="button home__button">Descarga mi curriculum</a>
+                </div>
             </div>
         </section>
 
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+        <!-- A B O U T -->
+        <section class="about section" id="about">
+            <span class="section-subtitle">Mi introducción</span>
+            <h2 class="section-title">Sobre mí</h2>
 
             <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
+                <div class="about__data">
+                    <p class="about__description">
+                        <i class="icofont-rounded-right"></i> Ingeniero informático, en búsqueda de oportunidades en el área de Desarrollo WEB o Android para el crecimiento y desarrollo profesional. Fortalezas: Ético, facilidad de trabajo en equipo, facilidad de aprendizaje, metódico, responsable, perseverante y con iniciativa propia para la resolución de problemas 
+                    </p>
                 </div>
+            
+            <div>
+                <div class="about__information">
+                    <h3 class="about__information-title">
+                        Information
+                    </h3>
+    
+                    <div class="about__information-data">
+                        <i class="bx bx-user about__information-icon"></i>
+                        <span>Matias Diaz</span>
+                    </div>
+    
+                    <div class="about__information-data">
+                        <i class="bx bx-phone about__information-icon"></i>
+                        <span>+56957137788</span>
+                    </div>
+    
+                    <div class="about__information-data">
+                        <i class="bx bx-envelope about__information-icon"></i>
+                        <span>matiasdiazarriaza@gmail.com</span>
+                    </div>
+                    
+                    
+                </div>
+                <div class="about__information">
+                    <h3 class="about__information-title">Experiencia</h3>
+    
+                    <div class="about__information-data">
+                        <i class="bx bx-medal about__information-icon"></i>
+                        <div>
+                            <span class="about__information-subtitule"> 4 meses experiencia</span>
+                            <span class="about__information-subtitle-small">Laboral</span>
+                        </div>
+                    </div>
+                    <div class="about__information-data">
+                        <i class="bx bx-briefcase about__information-icon"></i>
+                        <div>
+                            <span class="about__information-subtitule">2 Proyectos</span>
+                            <span class="about__information-subtitle-small">Completados</span>
+                        </div>
+                    </div>
+                    
+                    
+    
+                </div> 
+            </div>
+           
+        </div>
+        </section>
+        <section class="skill section" id="skills" >
+            <span class="section-subtitle">¿Por que elegirme?</span>
+            <h2 class="section-title"><i class="icofont-bars"></i>Mis skills</h2>
 
-                <div>
-                    <h2 class="about__subtitle">I'am Marlon</h2>
-                    <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
+            <div class="skill__container bd-grid">
+                <div class="skill__content">
+                    <div class="skill__data">
+                        <span class="skill__name"><i class="icofont-brand-java"></i>Java</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__java"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-python' ></i>Python</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__python"></span>
+                        
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name">Kotlin</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__kotlin"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name">Dart</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__dart"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-javascript' ></i>JavaScript</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__js"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-angular' ></i>No-SQL</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__no-sql"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-angular' ></i>SQL</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__sql"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-android ' ></i>Android Native</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__android"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name">Illustrator</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__illustrator"></span>
+                    </div>
                 </div>
+                <div class="skills__content">
+                    
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-python' ></i>Angular</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__angular"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"></i>Reactjs</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__react"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-spring-boot' ></i>Spring Boot</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__springboot"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxl-django' ></i>Django</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__django"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class='bx bxs-flask' ></i>Flask</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__flask"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name">Flutter</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__flutter"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class="icofont-github"></i>Git</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__git"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class="bx bxl-html5"></i>HTML/CSS</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__html"></span>
+                    </div>
+                    <div class="skill__data">
+                        <span class="skill__name"><i class="bx bxl-illustrator"></i>Photoshop</span>
+                        <span class="skill__bar skills__total"></span>
+                        <span class="skill__bar skills__photoshop"></span>
+                    </div>
+                    
+                </div>
+               
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+        <!-- EDUCATION -->
 
-            <div class="skills__container bd-grid">
+        <section class="education section" id="trayectoria">
+            <span class="section-subtitle">Experiencia laboral</span>
+            <h2 class="section-title">Mi experiencia</h2>
+
+
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div></div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Desarrollador Trainee</h3>
+                        <h4 class="education__year"> <span>Marzo 2021 - Actualidad</span></h3>
+                        <span class="education__university" style="font-weight: bold; color: #f74b47;">ACL Consultores de Tecnología</span>
+                        <div style="margin-left: 1rem;">
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Desarrollo de backend.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Desarrollo aplicaciones moviles multiplataforma.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Lenguajes: Python, Dart.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Framework: Flask, Flutter.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Google Cloud Plataform, Firebase</span>
+                        
+                        </div>
+                    </div>
+                
+
+                </div>
+                <div class="education__content">
+                        <div></div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Pasantia desarrollador movil</h3>
+                        <h4 class="education__year"> <span>Enero 2021 - Marzo 2021</span></h3>
+                        <span class="education__university" style="font-weight: bold; color: #f74b47;">ACL Consultores de Tecnología</span>
+                        <div style="margin-left: 1rem;">
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Desarrollo aplicaciones moviles multiplataforma.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Lenguaje: Dart.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Framework: Flutter.</span>
+                        <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Arquitectura: Clean</span>
+                        </div>
+                    </div>
+                
+
+                </div>
+                <div class="education__content" style="margin-bottom: 4rem;">
+                    <div></div>
+                <div class="education__time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line-end"></span>
+                </div>
                 <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
-                        </div>
-                        <div class="skills__bar skills__html">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">95%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__bar skills__css">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JAVASCRIPT</span>
-                        </div>
-                        <div class="skills__bar skills__js">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
+                    <h3 class="education__race">Practica profesional</h3>
+                    <h4 class="education__year"> <span>Enero 2020 - Marzo 2020</span></h3>
+                    <span class="education__university" style="font-weight: bold; color: #6A2E92;">Banco Security</span>
+                    <div style="margin-left: 1rem;">
+                    <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Monitoreo de procesos</span>
+                    <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Automatización procesos(JOBS,DTSX)</span>
+                    <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Programación mantenedores ASP.NET MVC 5</span>
+                    <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>Creacion de SP</span>
+                    <span class="education__university"><i class='bx bx-radio-circle-marked' ></i>CRM</span>
                     </div>
                 </div>
+            
 
-                <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+            </div>
+
+            </div>
+            <span class="section-subtitle">Educación</span>
+            <h2 class="section-title">Informacion educacional</h2>
+
+
+            <div class="education__container bd-grid" style="margin-bottom: 1rem;">
+                <div class="education__content">
+                    <div></div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Ingenieria informática</h3>
+                        <h4 class="education__year"> <span>2016-2019</span></h3>
+                        <span class="education__university">Universidad Tecnologica de Chile INACAP</span>
+                    </div>
+                
+
                 </div>
+                <div class="education__content">
+                        <div></div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Tecnico gráfico nivel medio</h3>
+                        <h4 class="education__year"> <span>2012-2015</span></h3>
+                        <span class="education__university">Colegio San Lorenzo</span>
+                    </div>
+                
+
+                </div>
+
             </div>
         </section>
 
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
-
-            <div class="work__container bd-grid">
-                <div class="work__img">
-                    <img src="assets/img/work1.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work2.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work3.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work4.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work5.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work6.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+            <span class="section-subtitle">Algunos cursos que he hecho...</span>
+            <h2 class="section-title">Certificaciones</h2>
 
-            <div class="contact__container bd-grid">
+            <!-- <div class="contact__container bd-grid">
                 <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input"> 
+                    </div>
+                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                    <input type="submit" value="Send Message" class="button contact__button">
                 </form>
-            </div>
+
+            </div> -->
+            <!-- <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Call me</h3>
+                    <span class="contact__text">+56957137788</span>
+                </div>
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Send me a email</h3>
+                    <span class="contact__text">matiasdiazarriaza@gmail.com</span>
+                </div>
+            </div> -->
         </section>
+
     </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Marlon</p>
-        <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    <footer class="footer section">
+        <div class="footer__container" style="width: 90%; margin-left: auto; margin-right: auto;">
+            <h1 class="footer__title">Matias</h1>
+            <p class="footer__description">I'm Matias and this is my personal website</p>
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-twitter' ></i></a>
+            </div>
+
+            <p class="footer__copy">All right reserved by MatiasDiazA - 2021</p>
         </div>
-        <p>&#169; 2020 copyright all right reserved</p>
     </footer>
 
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
