@@ -437,7 +437,7 @@ img{
 }
 
 .skills__react{
-    width: 40%;
+    width: 70%;
 }
 
 .skills__springboot{
@@ -653,7 +653,7 @@ img{
         width: var(--nav-width);
     }
 
-    .about__container, .skill__container, .contact__container,.contact__input{
+    .about__container, .skill__container, .contact__container,.contact__input, .certification__container{
         grid-template-columns: repeat(2,1fr);
     }
     .about__data{
