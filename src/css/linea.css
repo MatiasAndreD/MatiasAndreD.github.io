@@ -1,0 +1,60 @@
+
+.lista-con-linea {
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    padding-left: 0; /* Elimina el padding izquierdo predeterminado */
+    margin-left: 30px; /* Proporciona espacio para la línea y los círculos */
+
+  }
+  
+  .lista-con-linea li {
+    position: relative; /* Permite posicionar los pseudo-elementos respecto al <li> */
+    padding-left: 10px; /* Da espacio para el círculo */
+  }
+
+
+ /* Circulos */
+   .lista-con-linea li:after {
+    content: '';
+    position: absolute;
+    left: -4.6rem; /* Ajusta para alinear el círculo con la línea */
+    top: 23%;
+    transform: translateY(-50%);
+    height: 12px; /* Tamaño del círculo */
+    width: 12px; /* Tamaño del círculo */
+    background-color: #fff; /* Color del círculo */
+    border-radius: 50%; /* Hace el círculo redondo */
+    z-index: 2;
+  }
+
+   /* Ajusta la línea para que inicie en la mitad del primer círculo y termine en la mitad del último */
+   .lista-con-linea li:first-child:before {
+    top: 40%;
+    height: 74%;
+  }
+  
+  
+  .lista-con-linea li:before {
+    content: '';
+    position: absolute;
+    left: -4.25rem; /* Ajusta para alinear el círculo con la línea */
+    top: 35%;
+    height: 76%; /* Asegura que la línea alcance hasta el siguiente círculo */
+    width: 2px; /* Grosor de la línea */
+    background-color: #fff; /* Color de la línea */
+    z-index: 1;
+    border-radius: 50px;
+  }
+  
+ 
+  .background-orange{
+    background-color: #FF570A !important;
+  }
+ 
+  .lista-con-linea li:last-child:before {
+    height: 0%;
+  }
+
+  .lista-con-linea-actual li:first-child:after {
+    background-color: #FF570A; /* Cambia el color de fondo del primer círculo */
+  }
+  
