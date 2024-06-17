@@ -1,157 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/css/darkmode.css">
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>My resume web</title>
 </head>
-<body>
-        <div class="buttondark">
-            <i class="fa-duotone fa-moon"></i>
-            <!--<i class="fa-solid fa-sun-bright"></i>-->
-        </div>
+<body class="light-mode">
+    <div class="buttontop d-flex">
+        <div id="change-lang-btn" class="button-language"><img src="./src/img/en-flag.png" style="width: 100%;" alt="Cambio de idioma"></div>
+        <!--<div class="button-darkmode"><i class="fa-solid fa-moon"></i></div> -->
+    </div>
 
-
-      </div>
     <section class="container-fluid vh-100" id="principal">
         <div class="d-flex flex-column justify-content-center text-center align-self-center black h-100">
-            <div class="font-200 fs-10">Hola 👋🏻, soy</div>
-            <div class="font-900 fs-1">Matías Díaz Arriaza</div>
-            <div class="font-500 fs-10">Ingeniero Informático - Analista Sr - Data scientist - Desarrollador</div>
+            <div class="font-200 fs-10" data-key="greeting"></div>
+            <div class="font-900 fs-1" data-key="name"></div>
+            <div class="font-500 fs-10" data-key="description"></div>
             <div class="buttonSection mt-2">
-                <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi correo" data-bs-offset="0, 10"><i class="fa-solid fa-envelopes"></i></button>
+                <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi correo" data-bs-offset="0, 10"><i class="fa-solid fa-envelope"></i></button>
                 <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi Linkedin" data-bs-offset="0, 10"><i class="fa-brands fa-linkedin-in"></i></button>
-                <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi CV" data-bs-offset="0, 10"><i class="fa-solid fa-page-caret-down"></i></button>
-                
-              </div>    
+                <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi CV" data-bs-offset="0, 11"><i class="fa-solid fa-file-lines"></i></button>
+            </div>
         </div>
-
         <div id="particles-js"></div>
     </section>
-    <section class="container-fluid  background-secondary p-3">
+    <section class="container-fluid background-secondary p-3">
         <div class="d-flex flex-column text-center white h-100">
-            <div class="font-900 fs-1">UN POQUITO SOBRE MÍ<span class="montserrat-title">.</span></div>
-            <div class="d-flex flex-wrap m-4 justify-content-sm-center justify-content-md-center ">
+            <div class="font-900 fs-1" data-key="about-title"></div>
+            <div class="d-flex flex-wrap m-4 justify-content-sm-center justify-content-md-center">
                 <img src="../src/img/micara3.png" width="300wv" alt="" srcset="">
                 <div class="d-flex flex-column justify-content-center col-lg-9 col-sm-12 col-md-9 col-xl-9 p-3">
-                    <div class="font-500 fs-12 justify-text p-3">
-                        <!-- "Soy una persona persistente y leal, dedicada a perfeccionar constantemente mi entorno a través de un enfoque proactivo hacia el aprendizaje y la aplicación de conocimientos nuevos. En el ámbito bancario, no solo me esfuerzo por asegurar que los procesos se ejecuten sin problemas, sino que también busco activamente adquirir habilidades y técnicas innovadoras, las cuales implemento de manera eficaz para mejorar nuestro servicio. Fuera del trabajo, mi interés en el café me lleva a experimentar y aplicar nuevas técnicas de preparación, con el sueño a largo plazo de abrir una cafetería en el sur de Chile. Valorando profundamente el trabajo en equipo y la comunicación efectiva, busco contribuir a un ambiente colaborativo donde todos podamos crecer juntos." -->
-                        En mi carrera profesional como Ingeniero en Informática, valoro la oportunidad de crecer y aplicar lo aprendido en cada proyecto que abordo. Trabajando en el sector bancario, pongo especial atención en la ejecución de proyectos, introduciendo propuestas prácticas y asegurándome de que aporten valor real y mejoren nuestra forma de operar. Priorizo la colaboración y la comunicación abierta, con el compromiso de contribuir a un ambiente de trabajo donde todos podamos avanzar juntos. En lo personal, mi afición por el café alimenta mi sueño de algún día abrir una cafetería en el sur de Chile, creando un rincón lleno de calidez y sabor<span class="montserrat-parrafo"> .</span>
-                    </div>
+                    <div class="font-500 fs-12 justify-text p-3" data-key="about-content"></div>
                 </div>
-       
-            </div>
-        
-            
-        </div>
-        
-    </section>
-    <section class="container-fluid p-3" >
-        <div class="d-flex flex-column justify-content-center text-center align-self-center black h-100 "> 
-
-            <div class="font-900 fs-1 mb-3">MIS AMPLITUDES<span class="montserrat-title">.</span></div>
-            <div class="row text-center ">
-                <div class="col-lg-4 col-sm-12 col-md-4 col-xl-4 p-3">
-                    <div class="font-700 fs-5 mb-2">Análisis de Datos y BI</div>
-                    <div class="d-flex flex-wrap fs-7 justify-content-center font-300">
-                            <div class="tags">Análisis de Datos</div>
-                            <div class="tags">Visualización de Datos</div>
-                            <div class="tags">SQL</div>
-                            <div class="tags">Python</div>
-                            <div class="tags">Power BI</div>
-                            <div class="tags">Web Scraping</div>
-                            <div class="tags">Control de versiones</div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4 col-xl-4 p-3">
-                    <div class="font-700 fs-5 mb-2">Liderazgo y Comunicación</div>
-                    <div class="d-flex flex-wrap fs-7 justify-content-center font-300">
-                            <div class="tags">Comunicación Efectiva</div>
-                            <div class="tags">Trabajo en Equipo</div>
-                            <div class="tags">Presentaciones</div>
-                            <div class="tags">Gestión de Conflictos</div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4 col-xl-4 p-3">
-                    <div class="font-700 fs-5 mb-2">Innovación y Estrategia</div>
-                    <div class="d-flex flex-wrap fs-7 justify-content-center font-300">
-                            <div class="tags">Pensamiento Crítico</div>
-                            <div class="tags">Resolución de Problemas</div>
-                            <div class="tags">Creatividad</div>
-                            <div class="tags">Autodidacta</div>
-                            <div class="tags">Planificación Estratégica</div>
-                            <div class="tags">Mejora Continua</div>
-                            
-
-                    </div>
-                </div>
-                
             </div>
         </div>
     </section>
-
+    <section class="container-fluid p-3 background-primary">
+        <div class="d-flex flex-column justify-content-center text-center align-self-center black h-100">
+            <div class="font-900 fs-1 mb-3" data-key="skills-title"></div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-sm-12 col-md-4 col-xl-4 p-3">
+                    <div class="font-700 fs-5 mb-2" data-key="data-analysis-title"></div>
+                    <div class="d-flex flex-wrap fs-7 justify-content-center font-300">
+                        <div class="tags" data-key="data-analysis-skills-1"></div>
+                        <div class="tags" data-key="data-analysis-skills-2"></div>
+                        <div class="tags" data-key="data-analysis-skills-3"></div>
+                        <div class="tags" data-key="data-analysis-skills-4"></div>
+                        <div class="tags" data-key="data-analysis-skills-5"></div>
+                        <div class="tags" data-key="data-analysis-skills-6"></div>
+                        <div class="tags" data-key="data-analysis-skills-7"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-4 col-xl-4 p-3">
+                    <div class="font-700 fs-5 mb-2" data-key="leadership-title"></div>
+                    <div class="d-flex flex-wrap fs-7 justify-content-center font-300">
+                        <div class="tags" data-key="leadership-skills-1"></div>
+                        <div class="tags" data-key="leadership-skills-2"></div>
+                        <div class="tags" data-key="leadership-skills-3"></div>
+                        <div class="tags" data-key="leadership-skills-4"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-4 col-xl-4 p-3">
+                    <div class="font-700 fs-5 mb-2" data-key="innovation-title"></div>
+                    <div class="d-flex flex-wrap fs-7 justify-content-center font-300">
+                        <div class="tags" data-key="innovation-skills-1"></div>
+                        <div class="tags" data-key="innovation-skills-2"></div>
+                        <div class="tags" data-key="innovation-skills-3"></div>
+                        <div class="tags" data-key="innovation-skills-4"></div>
+                        <div class="tags" data-key="innovation-skills-5"></div>
+                        <div class="tags" data-key="innovation-skills-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="container-fluid background-secondary p-3">
         <div class="d-flex flex-column white h-100">
-            <div class="font-900 fs-1 mb-3 text-center">MI EXPERIENCIA LABORAL<span class="montserrat-title">.</span></div>
+            <div class="font-900 fs-1 mb-3 text-center" data-key="experience-title"></div>
             <div class="d-flex flex-wrap gap-1">
                 <div class="info-card col-sm-12 col-lg-5 col-md-5 mt-0 mb-4">
-                    <div class="row mb-0 d-flex flex-wrap flex-row ">
+                    <div class="row mb-0 d-flex flex-wrap flex-row">
                         <div class="d-flex col-lg-2 col-sm-12 mt-2 justify-content-center">
-                            <img class="img-logo" src="https://media.licdn.com/dms/image/C4D0BAQErd4HjgBODQQ/company-logo_100_100/0/1654202549635/banco_security_logo?e=1716422400&v=beta&t=QSmiXXrC6QQe5v-7Ii124gUhU2jYr6-xHTdWYcXHpqU" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
+                            <img class="img-logo" src="./src/img/banco_security_logo.jpeg" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
                         </div>
-                        <div class="col-lg-10 col-sm-12 m-0 ">
-                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start ">Banco Security</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Jornada completa - 2 años 7 meses</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Las Condes, Región Metropolitana de Santiago, Chile</div>
+                        <div class="col-lg-10 col-sm-12 m-0">
+                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start">Banco Security</div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start"><span id="experience-1-general-duration" data-key="experience-1-general-duration"></span><span id="diferenciaMesesGeneral"></span></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="experience-1-location-1"></div>
                         </div>
                     </div>
                     <div class="ms-4">
                         <ul class="list-group lista-con-linea lista-con-linea-actual fs-6">
                             <li class="list-group-item">
-                                <p class="mb-0 font-600 white">Analista Sr Inteligencia de negocios</p>
-                                <p class="mb-0 font-300 white">abr. 2023 - actualidad · 11 meses</p>
-                                <p class="mb-0 font-300 white">Híbrido</p>
+                                <p class="mb-0 font-600 white" data-key="experience-1-role-1"></p>
+                                <p class="mb-0 font-300 white"><span id="experience-1-duration-1" data-key="experience-1-duration-1"></span><span id="diferenciaMeses"></span></p>
+                                <p class="mb-0 font-300 white" data-key="experience-1-mode-1"></p>
                             </li>
                             <li class="list-group-item">
-                                <p class="mb-0 font-600 white">Analista Inteligencia de negocios</p>
-                                <p class="mb-0 font-300 white">ago. 2021 - mar. 2023 · 4 meses</p>
-                                <p class="mb-0 font-300 white">Híbrido</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="info-card col-sm-12 col-lg-5 col-md-5 mt-0 mb-4" style="background-color: #005653;"> 
-                    <div class="row mb-0 d-flex flex-wrap flex-row">
-                        <div class="d-flex col-lg-2 col-sm-12 mt-2 justify-content-center">
-                            <img src="https://media.licdn.com/dms/image/D4E0BAQFjMhsNflDeEw/company-logo_100_100/0/1704718475304/acltecnologia_logo?e=1716422400&v=beta&t=_956j3prFtu3DVOrEm7lUqgCpugZla5t2FbfJ9nkYTo" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
-                        </div>
-                        <div class="col-lg-10 col-sm-12 m-0 ">
-                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start ">ACL Tecnología</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Jornada completa - 8 meses</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Santiago, Región Metropolitana de Santiago, Chile</div>
-                        </div>
-                    </div>
-                    <div class="ms-4">
-                        <ul class="list-group lista-con-linea">
-                            <li class="list-group-item">
-                                <p class="mb-0 font-600 white">Desarrollador Full Stack Jr</p>
-                                <p class="mb-0 font-300 white">jul. 2021 - ago. 2021 · 2 meses</p>
-                                <p class="mb-0 font-300 white">Remoto</p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="mb-0 font-600 white">Desarrollador Full Stack Trainee</p>
-                                <p class="mb-0 font-300 white">mar. 2021 - jun. 2021 · 4 meses</p>
-                                <p class="mb-0 font-300 white">Remoto</p>
-                            </li>
-                            <li class="list-group-item">
-                                <p class="mb-0 font-600 white">Pasantía Desarrollador Full Stack</p>
-                                <p class="mb-0 font-300 white">ene. 2021 - mar. 2021 · 3 meses</p>
-                                <p class="mb-0 font-300 white">Remoto</p>
+                                <p class="mb-0 font-600 white" data-key="experience-1-role-2"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-1-duration-2"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-1-mode-2"></p>
                             </li>
                         </ul>
                     </div>
@@ -159,67 +111,90 @@
                 <div class="info-card col-sm-12 col-lg-5 col-md-5 mt-0 mb-4" style="background-color: #005653;">
                     <div class="row mb-0 d-flex flex-wrap flex-row">
                         <div class="d-flex col-lg-2 col-sm-12 mt-2 justify-content-center">
-                            <img class="img-logo" src="https://media.licdn.com/dms/image/C4D0BAQErd4HjgBODQQ/company-logo_100_100/0/1654202549635/banco_security_logo?e=1716422400&v=beta&t=QSmiXXrC6QQe5v-7Ii124gUhU2jYr6-xHTdWYcXHpqU" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
+                            <img src="./src/img/acltecnologia_logo.jpeg" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
                         </div>
-                        <div class="col-lg-10 col-sm-12 m-0 ">
-                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start ">Banco Security</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Jornada completa - 3 meses</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Las Condes, Región Metropolitana de Santiago, Chile</div>
+                        <div class="col-lg-10 col-sm-12 m-0">
+                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start">ACL Tecnología</div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="experience-2-general-duration"></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="experience-2-location-1"></div>
+                        </div>
+                    </div>
+                    <div class="ms-4">
+                        <ul class="list-group lista-con-linea">
+                            <li class="list-group-item">
+                                <p class="mb-0 font-600 white" data-key="experience-2-role-1"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-2-duration-1"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-2-mode-1"></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="mb-0 font-600 white" data-key="experience-2-role-2"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-2-duration-2"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-2-mode-2"></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="mb-0 font-600 white" data-key="experience-2-role-3"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-2-duration-3"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-2-mode-3"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-card col-sm-12 col-lg-5 col-md-5 mt-0 mb-4" style="background-color: #005653;">
+                    <div class="row mb-0 d-flex flex-wrap flex-row">
+                        <div class="d-flex col-lg-2 col-sm-12 mt-2 justify-content-center">
+                            <img class="img-logo" src="./src/img/banco_security_logo.jpeg" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
+                        </div>
+                        <div class="col-lg-10 col-sm-12 m-0">
+                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start">Banco Security</div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="experience-3-general-duration"></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="experience-3-location-1"></div>
                         </div>
                     </div>
                     <div class="ms-4">
                         <ul class="list-group lista-con-linea">
                             <li class="list-group-item fs-6">
-                                <p class="mb-0 font-600 white">Practicante herramientas comerciales</p>
-                                <p class="mb-0 font-300 white">ene. 2020 - mar. 2020 · 3 meses</p>
-                                <p class="mb-0 font-300 white">Presencial</p>
+                                <p class="mb-0 font-600 white" data-key="experience-3-role-1"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-3-duration-1"></p>
+                                <p class="mb-0 font-300 white" data-key="experience-3-mode-1"></p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
             </div>
-          
         </div>
     </section>
-    <section class="container-fluid p-3" >
-        <div class="d-flex flex-column justify-content-center text-center align-self-center black h-100 "> 
-
-            <div class="font-900 fs-1 mb-3">MI EDUCACIÓN<span class="montserrat-title">.</span></div>
+    <section class="container-fluid p-3 background-primary">
+        <div class="d-flex flex-column justify-content-center text-center align-self-center black h-100">
+            <div class="font-900 fs-1 mb-3" data-key="education-title"></div>
             <div class="d-flex flex-wrap row gap-1">
                 <div class="info-card col-sm-12 col-lg-4 col-md-4 mt-0 p-4 white">
                     <div class="row mb-0 d-flex flex-wrap flex-row mb-4">
                         <div class="d-flex col-lg-2 col-sm-12 mt-2 justify-content-center">
-                            <img class="img-logo" src="https://media.licdn.com/dms/image/C5103AQFxlakRvsS7qw/profile-displayphoto-shrink_800_800/0/1516538381018?e=1714003200&v=beta&t=vQ2E9-MUWyZ9MluCeI9PiLL5zuISt2ikz5PHoft61QQ" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
+                            <img class="img-logo" src="./src/img/universidad_autnoma_de_chile_logo.jpeg" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
                         </div>
-                        <div class="col-lg-10 col-sm-12 m-0 ">
-                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start ">Diplomado Business Analytics con Inteligencia Artificial.</div>
-                            <div class="mb-0 font-600 text-center text-xl-start text-lg-start ">Universidad Autónoma de Chile.</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Dic. 2023 - actualidad</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Virtual</div>
+                        <div class="col-lg-10 col-sm-12 m-0">
+                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start" data-key="education-1-degree"></div>
+                            <div class="mb-0 font-600 text-center text-xl-start text-lg-start" data-key="education-1-institution"></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="education-1-duration"></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="education-1-mode"></div>
                         </div>
                     </div>
-                    <div class="row mb-0 d-flex flex-wrap flex-row ">
+                    <div class="row mb-0 d-flex flex-wrap flex-row">
                         <div class="d-flex col-lg-2 col-sm-12 mt-2 justify-content-center">
-                            <img class="img-logo" src="https://media.licdn.com/dms/image/C4E0BAQFrWhI3SbcbVg/company-logo_200_200/0/1630609105712/inacap_logo?e=1717027200&v=beta&t=bZGw2aYSA802W2IIVyqQymtBqsG2O-UmB4_0FIOFPuo" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
+                            <img class="img-logo" src="./src/img/inacap_logo.jpeg" alt="Icon" style="width:48px; height:48px; border-radius: 50%;">
                         </div>
-                        <div class="col-lg-10 col-sm-12 m-0 ">
-                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start ">Ingeniero en informática / Licenciado en informática.</div>
-                            <div class="mb-0 font-600 text-center text-xl-start text-lg-start ">Universidad Tecnológica de Chile Inacap.</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Mar. 2016 - Mar. 2020</div>
-                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start ">Presencial</div>
+                        <div class="col-lg-10 col-sm-12 m-0">
+                            <div class="mb-0 font-700 text-center text-xl-start text-lg-start" data-key="education-2-degree"></div>
+                            <div class="mb-0 font-600 text-center text-xl-start text-lg-start" data-key="education-2-institution"></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="education-2-duration"></div>
+                            <div class="mb-0 font-300 text-center text-xl-start text-lg-start" data-key="education-2-mode"></div>
                         </div>
                     </div>
-                    
                 </div>
-                
-            </div>  
-
-        </div>     
+            </div>
+        </div>
     </section>
-    
 
-    
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="../src/js/scripts_particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -227,10 +202,68 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../src/js/scripts.js"></script>
     <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        function fechaDiferencia(fechaInicio, lang = 'es') {
+            const inicio = new Date(fechaInicio);
+            const hoy = new Date();
+            let años = hoy.getFullYear() - inicio.getFullYear();
+            let meses = hoy.getMonth() - inicio.getMonth();
+            if (hoy.getDate() < inicio.getDate()) {
+                meses--;  // Ajusta si aún no se ha alcanzado el día del mes de la fecha de inicio
+            }
+            if (meses < 0) {
+                años--;
+                meses += 12; // Agrega 12 meses al total de meses si el mes actual es menor que el mes de inicio
+            }
+
+            let resultado = "";
+            if (lang === 'es') {
+                if (años > 0) resultado += `${años} año${años > 1 ? 's' : ''} `;
+                if (meses > 0) resultado += `${meses} mes${meses > 1 ? 'es' : ''}`;
+            } else {
+                if (años > 0) resultado += `${años} year${años > 1 ? 's' : ''} `;
+                if (meses > 0) resultado += `${meses} month${meses > 1 ? 's' : ''}`;
+            }
+            return resultado.trim();
+        }
+
+        // Funcionalidad para cambiar el idioma
+        document.addEventListener('DOMContentLoaded', () => {
+            const changeLangBtn = document.getElementById('change-lang-btn');
+            const elementsToTranslate = document.querySelectorAll('[data-key]');
+            let currentLang = 'es';
+
+            // Fetch translations
+            fetch('./src/content/translations.json')
+                .then(response => response.json())
+                .then(translations => {
+                    changeLangBtn.addEventListener('click', () => {
+                        currentLang = currentLang === 'es' ? 'en' : 'es';
+                        changeLanguage(translations, currentLang);
+                        updateFechas(currentLang);
+                    });
+                    // Inicializar la traducción al cargar la página
+                    changeLanguage(translations, currentLang);
+                    updateFechas(currentLang);
+                });
+
+            const changeLanguage = (translations, lang) => {
+                elementsToTranslate.forEach(element => {
+                    const key = element.getAttribute('data-key');
+                    if (translations[lang][key]) {
+                        element.innerHTML = translations[lang][key];
+                    }
+                });
+                changeLangBtn.querySelector('img').src = lang === 'es' ? './src/img/en-flag.png' : './src/img/cl-flag.png';
+            };
+
+            const updateFechas = (lang) => {
+                document.getElementById('diferenciaMeses').textContent = fechaDiferencia('2023-04-01', lang);
+                document.getElementById('diferenciaMesesGeneral').textContent = fechaDiferencia('2021-08-17', lang);
+            }
+        });
     </script>
 </body>
-
-
 </html>

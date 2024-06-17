@@ -1,213 +1,253 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-html,body{
-    margin: 0;
-    padding: 0;
+:root {
+
+    --color-dark-background: #021012;
+    --color-light-text: #FAFAFA;
+    --color-dark-text: #FAFAFA;
+    --color-highlight: #FF570A;
+    --color-button-background: #25283D;
+    --color-button-text: #F5BB00;
+    --color-primary-background: #05161A;
+    --color-secondary-background: #072E33;
+    --color-circle-background: #FFFFFF;
+	
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.buttontop {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+}
+
+.button-darkmode {
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-button-background);
+  border-radius: 50%;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  color: var(--color-button-text);
+  cursor: pointer;
+}
+
+.button-language {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  color: var(--color-button-text);
+  cursor: pointer;
 }
 
 #particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background-color:#05161A   ; /* Color de fondo */
-    background-color:#FFFFFF   ; /* Color de fondo */
-    z-index: -2;
-}
-.white{
-    color: #FAFAFA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-background);
+  z-index: -2;
 }
 
-.black{
-    color: #072E33;
+.white {
+  color: var(--color-light-text);
+}
+
+.black {
+  color: var(--color-dark-text);
+}
+
+.background-primary {
+  background-color: var(--color-primary-background);
+}
+
+.background-secondary {
+  background-color: var(--color-secondary-background) !important;
 }
 
 .justify-text {
-    text-align: left;
-    text-wrap: balance;
-  }
+  text-align: left;
+  text-wrap: balance;
+}
 
 .font-200 {
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 200;
-  }
-  
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+}
+
 .font-300 {
-font-family: 'Titillium Web', sans-serif;
-font-weight: 300;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
 }
 
 .font-400 {
-font-family: 'Titillium Web', sans-serif;
-font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 }
 
 .font-600 {
-font-family: 'Titillium Web', sans-serif;
-font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
 }
 
 .font-700 {
-font-family: 'Titillium Web', sans-serif;
-font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
 }
 
 .font-900 {
-font-family: 'Titillium Web', sans-serif;
-font-weight: 900;
-}
-
-.background-primary{
-background-color: #05161A;
-}
-
-.background-secondary{
-background-color: #072E33 !important;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
 }
 
 .rounded-circle-prim {
-width: 46px; /* Establece un ancho fijo */
-height: 46px; /* Establece una altura fija */
-padding: 0; /* Elimina el relleno para que el ícono se centre */
-display: flex; /* Permite el uso de flexbox para centrar el ícono */
-justify-content: center; /* Centra el ícono horizontalmente */
-align-items: center; /* Centra el ícono verticalmente */
-border-radius: 50% !important;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  color: white;
+  background-color: #fff;
 }
 
-.sub{
-border-bottom: #fff 2px solid;
+.sub {
+  border-bottom: var(--color-circle-background) 2px solid;
 }
 
 .montserrat-title {
-font-family: 'Montserrat', sans-serif !important;
-font-weight: 700;
-font-size: 3.5rem;
-margin: 0;
-padding: 0;
-color: #FF570A;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
+  color: var(--color-highlight);
 }
 
-.montserrat-parrafo{
-font-family: 'Montserrat', sans-serif !important;
-font-weight: 700;
-margin: 0;
-padding: 0;
-color: #FF570A;
+.montserrat-parrafo {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: var(--color-highlight);
 }
 
-
-.tags{
-padding: 0.4rem;
-padding-left: 0.5rem;
-padding-right: 0.5rem;
-background-color: #FF570A;
-color: #fff;
-margin-top: 3px;
-margin-left: 3px;
-border-radius: 0.3rem;
+.tags {
+  padding: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--color-highlight);
+  color: var(--color-circle-background);
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 0.3rem;
 }
 
-  
-.list-group-item{
-    background:none !important;
-    border: none !important;
+.list-group-item {
+  background: none !important;
+  border: none !important;
 }
 
-.job{
-    margin-bottom: 1.5rem !important;
- 
+.job {
+  margin-bottom: 1.5rem !important;
 }
 
-
-.img-logo{
-    width: 48px;
-    height: 48px;
+.img-logo {
+  width: 48px;
+  height: 48px;
 }
 
-  
 .info-card {
-    background-color: #021012;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
-  }
+  background-color: var(--color-dark-background);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
 
+.info-card .time-period {
+  color: var(--color-light-text);
+  margin-bottom: 15px;
+}
 
-  .info-card .time-period {
-    color: #fff;
-    margin-bottom: 15px;
-  }
+.info-card .company {
+  font-weight: bold;
+  color: var(--color-light-text);
+}
 
-  .info-card .company {
-    font-weight: bold;
-    color: #fff;
-  }
+.info-card .description {
+  color: var(--color-light-text);
+}
 
-  .info-card .description {
-    color: #fff;
-  }
+.lista-con-linea {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 30px;
+  font-size: 1rem !important;
+}
 
+.lista-con-linea li {
+  position: relative;
+  padding-left: 10px;
+}
 
+.lista-con-linea li:after {
+  content: '';
+  position: absolute;
+  left: -1.03rem;
+  top: 23%;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 12px;
+  background-color: var(--color-circle-background);
+  border-radius: 50%;
+  z-index: 2;
+}
 
-  .lista-con-linea {
-    list-style: none; /* Elimina las viñetas predeterminadas */
-    padding-left: 0; /* Elimina el padding izquierdo predeterminado */
-    margin-left: 30px; /* Proporciona espacio para la línea y los círculos */
-    font-size: 1rem !important;
-  }
-  
-  .lista-con-linea li {
-    position: relative; /* Permite posicionar los pseudo-elementos respecto al <li> */
-    padding-left: 10px; /* Da espacio para el círculo */
-  }
+.lista-con-linea li:first-child:before {
+  top: 35%;
+  height: 76%;
+}
 
-   .lista-con-linea li:after {
-    content: '';
-    position: absolute;
-    left: -1.03rem; /* Ajusta para alinear el círculo con la línea */
-    top: 23%;
-    transform: translateY(-50%);
-    height: 12px; /* Tamaño del círculo */
-    width: 12px; /* Tamaño del círculo */
-    background-color: #fff; /* Color del círculo */
-    border-radius: 50%; /* Hace el círculo redondo */
-    z-index: 2;
-  }
+.lista-con-linea li:before {
+  content: '';
+  position: absolute;
+  left: -0.71rem;
+  top: 35%;
+  height: 76%;
+  width: 2px;
+  background-color: var(--color-circle-background);
+  z-index: 1;
+  border-radius: 50px;
+}
 
-   /* Ajusta la línea para que inicie en la mitad del primer círculo y termine en la mitad del último */
-   .lista-con-linea li:first-child:before {
-    top: 35%;
-    height: 76%;
-  }
-  
-  
-  .lista-con-linea li:before {
-    content: '';
-    position: absolute;
-    left: -0.71rem; /* Ajusta para alinear el círculo con la línea */
-    top: 35%;
-    height: 76%; /* Asegura que la línea alcance hasta el siguiente círculo */
-    width: 2px; /* Grosor de la línea */
-    background-color: #fff; /* Color de la línea */
-    z-index: 1;
-    border-radius: 50px;
-  }
-  
- 
-  .background-orange{
-    background-color: #FF570A !important;
-  }
- 
-  .lista-con-linea li:last-child:before {
-    height: 0%;
-  }
+.background-orange {
+  background-color: var(--color-highlight) !important;
+}
 
-  .lista-con-linea-actual li:first-child:after {
-    background-color: #FF570A; /* Cambia el color de fondo del primer círculo */
-  }
-  
+.lista-con-linea li:last-child:before {
+  height: 0%;
+}
+
+.lista-con-linea-actual li:first-child:after {
+  background-color: var(--color-highlight);
+}
