@@ -1,253 +1,324 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+/* Variables para Modo Claro */
 :root {
-
-    --color-dark-background: #021012;
-    --color-light-text: #FAFAFA;
-    --color-dark-text: #FAFAFA;
+    --color-background: #FFFFFF;
+    --color-text: #021012;  /* Color del texto principal en modo claro */
     --color-highlight: #FF570A;
-    --color-button-background: #25283D;
-    --color-button-text: #F5BB00;
+    --color-primary-background: #FFFFFF;
+    --color-secondary-background: #F5F5F5;
+    --color-button-background: #E0E0E0;
+    --color-button-text: #021012;
+    --color-circle-background: #c6c6c6;
+    --color-link: #232272;  /* Color de enlaces y botones en modo claro */
+    
+}
+
+/* Variables para Modo Oscuro */
+.dark-mode {
+    --color-background: #021012;
+    --color-text: #FAFAFA;  /* Color del texto principal en modo oscuro */
+    --color-highlight: #FF570A;
     --color-primary-background: #05161A;
     --color-secondary-background: #072E33;
+    --color-button-background: #25283D;
+    --color-button-text: #F5BB00;
     --color-circle-background: #FFFFFF;
-	
+    --color-link: #E60D2E;  /* Color de enlaces y botones en modo oscuro */
+    --btn-color: #FFFFFF !important;
+
 }
 
 
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text) !important;  /* Usar las variables de color de texto */
+    transition: background-color 0.3s, color 0.3s;
+}
 
-html, body {
-  margin: 0;
-  padding: 0;
+h1, h2, h3, h4, h5, h6, p, span {
+    color: var(--color-text);  /* Aplicar el color de texto a todos estos elementos */
+}
+
+a {
+    color: var(--color-link);  /* Color para enlaces en ambos modos */
+    text-decoration: none;
 }
 
 .buttontop {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
 }
 
 .button-darkmode {
-  width: 3rem;
-  height: 3rem;
-  background: var(--color-button-background);
-  border-radius: 50%;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.35rem;
-  color: var(--color-button-text);
-  cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    cursor: pointer;
+    background-color: var(--color-button-background);
+    color: var(--color-button-text);
+}
+
+.button-darkmode i {
+    color: var(--color-button-text);
 }
 
 .button-language {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.35rem;
-  color: var(--color-button-text);
-  cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    cursor: pointer;
 }
 
 #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-primary-background);
-  z-index: -2;
-}
-
-.white {
-  color: var(--color-light-text);
-}
-
-.black {
-  color: var(--color-dark-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: var(--color-primary-background);
 }
 
 .background-primary {
-  background-color: var(--color-primary-background);
+    background-color: var(--color-primary-background);
 }
 
 .background-secondary {
-  background-color: var(--color-secondary-background) !important;
+    background-color: var(--color-secondary-background) !important;
 }
 
 .justify-text {
-  text-align: left;
-  text-wrap: balance;
+    text-align: left;
+    text-wrap: balance;
 }
 
 .font-200 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 200;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
 }
 
 .font-300 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
 }
 
 .font-400 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+.font-500 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
 }
 
 .font-600 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
 }
 
 .font-700 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
 }
 
 .font-900 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 900;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
 }
 
 .rounded-circle-prim {
-  width: 46px;
-  height: 46px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50% !important;
-  color: white;
-  background-color: #fff;
-}
-
-.sub {
-  border-bottom: var(--color-circle-background) 2px solid;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% !important;
+    background-color: var(--color-circle-background);
+    color: var(--color-text);
 }
 
 .montserrat-title {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 700;
-  font-size: 3.5rem;
-  margin: 0;
-  padding: 0;
-  color: var(--color-highlight);
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+    color: var(--color-highlight);  /* Mantener el color de título destacado */
 }
 
 .montserrat-parrafo {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  color: var(--color-highlight);
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: var(--color-highlight);  /* Color para destacar párrafos especiales */
 }
 
 .tags {
-  padding: 0.4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  background-color: var(--color-highlight);
-  color: var(--color-circle-background);
-  margin-top: 3px;
-  margin-left: 3px;
-  border-radius: 0.3rem;
+    padding: 0.4rem 0.5rem;
+    background-color: var(--color-highlight);
+    color: var(--color-text);
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 0.3rem;
 }
 
 .list-group-item {
-  background: none !important;
-  border: none !important;
-}
-
-.job {
-  margin-bottom: 1.5rem !important;
+    background: none !important;
+    border: none !important;
 }
 
 .img-logo {
-  width: 48px;
-  height: 48px;
+    width: 48px;
+    height: 48px;
 }
 
 .info-card {
-  background-color: var(--color-dark-background);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: auto;
-}
-
-.info-card .time-period {
-  color: var(--color-light-text);
-  margin-bottom: 15px;
-}
-
-.info-card .company {
-  font-weight: bold;
-  color: var(--color-light-text);
-}
-
-.info-card .description {
-  color: var(--color-light-text);
+    background-color: var(--color-primary-background);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    padding-left: 20px;
 }
 
 .lista-con-linea {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 30px;
-  font-size: 1rem !important;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 30px;
+    font-size: 1rem !important;
 }
 
 .lista-con-linea li {
-  position: relative;
-  padding-left: 10px;
+    position: relative;
+    padding-left: 10px;
 }
 
 .lista-con-linea li:after {
-  content: '';
-  position: absolute;
-  left: -1.03rem;
-  top: 23%;
-  transform: translateY(-50%);
-  height: 12px;
-  width: 12px;
-  background-color: var(--color-circle-background);
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.lista-con-linea li:first-child:before {
-  top: 35%;
-  height: 76%;
+    content: '';
+    position: absolute;
+    left: -1.03rem;
+    top: 23%;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 12px;
+    background-color: var(--color-circle-background);
+    border-radius: 50%;
+    z-index: 2;
 }
 
 .lista-con-linea li:before {
-  content: '';
-  position: absolute;
-  left: -0.71rem;
-  top: 35%;
-  height: 76%;
-  width: 2px;
-  background-color: var(--color-circle-background);
-  z-index: 1;
-  border-radius: 50px;
-}
-
-.background-orange {
-  background-color: var(--color-highlight) !important;
+    content: '';
+    position: absolute;
+    left: -0.71rem;
+    top: 35%;
+    height: 76%;
+    width: 2px;
+    background-color: var(--color-circle-background);
+    z-index: 1;
+    border-radius: 50px;
 }
 
 .lista-con-linea li:last-child:before {
-  height: 0%;
+    height: 0%;
 }
 
 .lista-con-linea-actual li:first-child:after {
-  background-color: var(--color-highlight);
+    background-color: var(--color-highlight);
+}
+
+.white {
+    color: var(--color-text);  /* Utilizar variable de color para el texto */
+}
+
+.black {
+    color: var(--color-text);  /* Usar la variable de color también en esta clase */
+}
+
+.fs-1 {
+    font-size: 2.5rem;
+}
+
+.fs-6 {
+    font-size: 1rem;
+}
+
+.fs-10 {
+    font-size: 1.5rem;
+}
+
+.fs-12 {
+    font-size: 1.2rem;
+}
+
+
+.btn {
+  color: var(--btn-color) !important;
+  border-color: var(--btn-color) !important;
+}
+
+.info-card-experience{
+  background-color: var(--color-secondary-background);
+}
+
+
+
+/* Estilos para las tarjetas de logros */
+.achievement-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.achievement-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.achievement-title {
+  font-family: 'Titillium', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #232272;  /* Puedes ajustar el color al que prefieras */
+}
+
+.achievement-description {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  text-align: justify;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
 }
