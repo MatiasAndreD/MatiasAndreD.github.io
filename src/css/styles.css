@@ -285,7 +285,7 @@ a {
 
 /* Estilos para las tarjetas de logros */
 .achievement-card {
-  background-color: white;
+  background-color: var(--color-primary-background);
   border-radius: 15px;
   padding: 20px;
   margin: 15px;
@@ -296,8 +296,8 @@ a {
 }
 
 .achievement-icon img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   margin-bottom: 15px;
 }
@@ -307,7 +307,8 @@ a {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #232272;  /* Puedes ajustar el color al que prefieras */
+  
+  color: #FB8B24;
 }
 
 .achievement-description {
@@ -318,7 +319,3 @@ a {
   text-align: justify;
 }
 
-.achievement-card:hover {
-  transform: translateY(-5px);
-  transition: transform 0.2s ease-in-out;
-}
