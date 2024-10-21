@@ -60,15 +60,15 @@
         "education-2-institution": "Universidad Tecnológica de Chile INACAP",
         "education-2-duration": "Mar. 2016 - Mar. 2020",
         "education-2-mode": "Presencial",
-        "achievements-title": "MIS LOGROS<span class='montserrat-title'>.</span>",
+        "achievements-title": "ALGUNOS DE MIS LOGROS<span class='montserrat-title'>...</span>",
         "achievement-1-title":"Optimización del Relacionamiento con Clientes",
         "achievement-1": "Lideré la mejora de un proceso crítico de relacionamiento con clientes que enfrentaba una alta tasa de incidencias. Mediante la implementación de soluciones estratégicas, logré reducir a cero las incidencias, mejorando tanto la eficiencia como la efectividad en la selección de contactos. Esto permitió realizar llamadas oportunas y alineadas con los pilares de excelencia del banco.",
-        "achievement-2-title": "Incremento del 60% en Ventas Mediante Mejora de Proceso de Leads",
-        "achievement-2": "Reestructuré el proceso de entrega de leads de ventas, lo que resultó en un incremento del 60% en las ventas y una reducción significativa de incidencias.",
-        "achievement-3-title":"Implementación de Soluciones Web para Optimización Operativa",
-        "achievement-3": "Implementé soluciones web que optimizaron procesos, reduciendo las horas hombre dedicadas a mediciones.",
-        "achievement-4-title":"Dashboards para el Seguimiento Proactivo de Procesos Críticos",
-        "achievement-4": "Desarrollé dashboards para el seguimiento de procesos críticos, permitiendo la detección temprana de problemas y anticipándonos a posibles incidencias."
+        "achievement-2-title": "Incremento del 60% en Ventas a través de la Optimización de Leads",
+        "achievement-2": "Redefiní un proceso de entrega de leads que estaba limitando el potencial de ventas al eliminar oportunidades altamente propensas a conversión. Tras un análisis detallado y la implementación de nuevas definiciones, el proceso mejorado resultó en un incremento del 60% en las ventas, además de una reducción significativa en las incidencias operativas.",
+        "achievement-3-title":"Desarrollo de Soluciones Tecnológicas y Automatización con Python",
+        "achievement-3": "Diseñé e implementé soluciones web, scripts automatizados en Python y herramientas de web scraping que nos permitieron obtener información valiosa para las estrategias de negocio. Estas soluciones optimizaron procesos internos y redujeron significativamente las horas-hombre dedicadas a tareas repetitivas. Esto permitió a los equipos enfocar sus esfuerzos en actividades de mayor valor estratégico, mejorando la eficiencia en la medición y seguimiento de indicadores clave.",
+        "achievement-4-title":"Dashboards Predictivos para la Gestión Proactiva",
+        "achievement-4": "Desarrollé dashboards avanzados para el monitoreo de procesos críticos del área, lo que permitió anticipar y prevenir incidencias antes de que escalaran en problemas mayores. Estas soluciones no solo mejoraron la visibilidad de los indicadores clave, sino que también proporcionaron una capacidad de respuesta proactiva ante posibles riesgos."
     },
     "en": {
         "greeting": "Hello 👋🏻, I am",
@@ -131,10 +131,14 @@
         "education-2-institution": "Universidad Tecnológica de Chile INACAP",
         "education-2-duration": "Mar. 2016 - Mar. 2020",
         "education-2-mode": "In-person",
-        "achievements-title": "MY ACHIEVEMENTS<span class='montserrat-title'>.</span>",
-        "achievement-1": "Optimized the customer relationship process, reducing incidents to 0 and improving efficiency in selecting customers for timely calls.",
-        "achievement-2": "Restructured the sales lead delivery process, resulting in a 60% increase in sales and a significant reduction in incidents.",
-        "achievement-3": "Implemented web solutions that optimized processes, reducing the man-hours dedicated to measurement.",
-        "achievement-4": "Developed dashboards for critical process tracking, enabling early detection of problems and anticipating potential incidents."
+        "achievements-title": "MY ACHIEVEMENTS<span class='montserrat-title'>...</span>",
+        "achievement-1-title": "Optimization of Client Relationship Management",
+        "achievement-1": "I led the improvement of a critical client relationship process that faced a high incidence rate. Through the implementation of strategic solutions, I successfully reduced incidents to zero, enhancing both the efficiency and effectiveness of contact selection. This allowed for timely calls that aligned with the bank's pillars of excellence.",
+        "achievement-2-title": "60% Sales Increase through Lead Optimization",
+        "achievement-2": "I redefined a lead delivery process that was limiting sales potential by excluding highly convertible opportunities. After a detailed analysis and the implementation of new definitions, the improved process resulted in a 60% increase in sales, along with a significant reduction in operational issues.",
+        "achievement-3-title": "Development of Technological Solutions and Automation with Python",
+        "achievement-3": "I designed and implemented web solutions, automated Python scripts, and web scraping tools that provided valuable insights for business strategies. These solutions optimized internal processes and significantly reduced man-hours spent on repetitive tasks, allowing teams to focus on higher-value strategic activities and improving efficiency in the measurement and tracking of key performance indicators.",
+        "achievement-4-title": "Predictive Dashboards for Proactive Management",
+  "achievement-4": "I developed advanced dashboards for monitoring critical processes within the department, enabling the anticipation and prevention of issues before they escalated into major problems. These solutions not only improved the visibility of key metrics but also provided a proactive response capability to mitigate potential risks."
     }
 }
