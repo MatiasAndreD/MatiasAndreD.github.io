@@ -46,3 +46,23 @@ $('.custom-btn__background').on('click', function() {
 }
 
 
+// JavaScript para copiar el correo al portapapeles y mostrar el mensaje de confirmación
+document.querySelector(".btn-outline-primary.rounded-circle-prim").addEventListener("click", function() {
+  const email = "matiasdiazarriaza@gmail.com";  // Reemplaza con tu dirección de correo
+
+  // Copiar el correo al portapapeles
+  navigator.clipboard.writeText(email).then(function() {
+      // Mostrar mensaje de confirmación
+      const confirmationMessage = document.getElementById("confirmation-message");
+      confirmationMessage.style.display = "block";
+      
+      // Ocultar el mensaje después de 2 segundos
+      setTimeout(function() {
+          confirmationMessage.style.display = "none";
+      }, 2000);
+  }).catch(function(error) {
+      console.error("Error al copiar el correo: ", error);
+  });
+});
+
+

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="buttontop d-flex">
@@ -25,11 +26,14 @@
             <div class="font-900 fs-1" data-key="name">Matías Díaz Arriaza</div>
             <div class="font-500 fs-10" data-key="description">Ingeniero Informático - Analista Sr - Data scientist - Desarrollador</div>
             <div class="buttonSection mt-2">
-                <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi correo" data-bs-offset="0, 10"><i class="fa-solid fa-envelope"></i></button>
-                <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi Linkedin" data-bs-offset="0, 10"><i class="fa-brands fa-linkedin-in"></i></button>
+                <button id="copy-email-btn" type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi correo" data-bs-offset="0, 10">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+                <a href="https://www.linkedin.com/in/analistabi-matiasdiaza/"><button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi Linkedin" data-bs-offset="0, 10"><i class="fa-brands fa-linkedin-in"></i></button></a>
                 <button type="button" class="btn btn-outline-primary rounded-circle-prim" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Mi CV" data-bs-offset="0, 11"><i class="fa-solid fa-file-lines"></i></button>
             </div>
         </div>
+        <div id="confirmation-message" class="confirmation-message" style="display: none;">Correo copiado al portapapeles</div>
         <div id="particles-js"></div>
     </section>
 
