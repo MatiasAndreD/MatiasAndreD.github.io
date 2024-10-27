@@ -54,6 +54,7 @@ a {
     top: 10px;
     right: 10px;
     display: flex;
+    z-index: 100;
 }
 
 .button-darkmode {
